@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnWeb3 DAO - First Dapp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div>
+    <div class="dapp">
       <h1>This is My First Dapp!</h1>
       <p>Here we can set or get the mood:</p>
-      <label for="mood">Input mood:</label><br />
-      <input type="text" id="mood" placeholder="Input mood here" />
-      <button onclick="getMood()">Get Mood</button>
-      <button onclick="setMood()">Set Mood</button>
+      <div class="mood">
+        <label for="mood">Input mood:</label><br />
+        <input type="text" id="mood" placeholder="Input mood here" />
+      </div>
+      <div class="buttons">
+        <button onclick="getMood()">Get Mood</button>
+        <button onclick="setMood()">Set Mood</button>
+      </div>
       <p id="showMood"></p>
+      <div class="name">
+        <p>Built with ❤️ by <span> Mrinmoy Porel</span></p>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/mrinnnmoy" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mrinnnmoy/" target="_blank">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="https://twitter.com/mrinnnmoy" target="_blank">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
     </div>
   </body>
   <script
